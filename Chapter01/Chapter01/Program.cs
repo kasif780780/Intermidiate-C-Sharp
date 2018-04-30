@@ -12,9 +12,9 @@ namespace Chapter01
     {
         
 
-        public void Introduce(string v)
+        public void Introduce(string v,string u)
         {
-            Console.WriteLine("Hi Am {0}",v);
+            Console.WriteLine("Hi  {0} Am {1}" ,v,u);
         }
 
 
@@ -25,7 +25,7 @@ namespace Chapter01
         {
             var person = new Person();
            
-            person.Introduce("Asif");
+            person.Introduce("Asif","John");
         }
     }
 }
