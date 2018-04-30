@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace Chapter_02
 {
+
+   
+    
     class Program
     {
         static void Main(string[] args)
         {
-            var customer = new Customer(1,"asif");
+            var customer = new Customer();
+            customer.Id = 1;
+            customer.Name = "Asif";
+            var order = new Order();
+            customer.Orders.Add(order);
             Console.WriteLine(customer.Id);
-            Console.WriteLine(customer.Name);
             Console.ReadLine();
         }
     }
