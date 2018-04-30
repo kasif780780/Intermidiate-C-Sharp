@@ -25,5 +25,11 @@ namespace Fields
             this.Name = name;
 
         }
+
+
+        public void Promote()
+        {
+            Orders = new List<Order>();
+        }
     }
 }
