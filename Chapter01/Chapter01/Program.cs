@@ -10,11 +10,11 @@ namespace Chapter01
 
     public class Person
     {
-        
+        public string Name;
 
-        public void Introduce(string v,string u)
+        public void Introduce(string u)
         {
-            Console.WriteLine("Hi  {0} Am {1}" ,v,u);
+            Console.WriteLine("Hi  {0}, I Am {1}" ,Name,u);
         }
 
 
@@ -24,8 +24,8 @@ namespace Chapter01
         static void Main(string[] args)
         {
             var person = new Person();
-           
-            person.Introduce("Asif","John");
+            person.Name = "Asif";
+            person.Introduce("John");
         }
     }
 }
